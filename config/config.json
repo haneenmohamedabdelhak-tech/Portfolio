@@ -1,8 +1,8 @@
 {
   "site": {
-    "title": "Geeky Nextjs",
+    "title": "Haneen Mohamed",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
+    "favicon": "/favicon.svg",
     "logo": "/images/logo.png",
     "logo_white": "/images/logo-light.png",
     "logo_width": "150",

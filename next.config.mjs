@@ -1,11 +1,5 @@
-
-const isProd = process.env.NODE_ENV === "production";
-
-const basePath = isProd ? "/geeky-nextjs" : "";
-
 const nextConfig = {
-  basePath,
-  ...(basePath && { assetPrefix: basePath }),
+  basePath: "", // Set to empty for root domain deployment
   images: {
     unoptimized: true,
   },
@@ -13,9 +7,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
-  },
+  output: 'export', // This tells Next.js to generate the 'out' folder
 };
 
 export default nextConfig;
